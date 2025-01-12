@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SeleniumProject">
+    <!-- Define which groups to run -->
+    <test name="SmokeTest">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+
+        <!-- Define the classes for smoke testing -->
+        <classes>
+            <class name="tests.foodGuruTest"/>
+        </classes>
+    </test>
+
+    <test name="RegressionTest">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+
+        <!-- Define the classes for regression testing -->
+        <classes>
+            <class name="tests.foodGuruTest"/>
+        </classes>
+    </test>
+</suite>
